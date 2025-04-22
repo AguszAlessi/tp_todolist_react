@@ -1,9 +1,26 @@
-import React from 'react'
+import { useState } from "react";
 
-export default function BotonAgregar() {
+function Agregar({ onAgregar }) {
+  const [texto, setTexto] = useState("");
+
+  const handleClick = () => {
+    if (texto.trim()) {
+      onAgregar(texto.trim());
+      setTexto("");
+    }
+  };
+
   return (
-    <div>
-           <input type ="text" placeholder="Escribe su tarea" id = "agregartarea"></input>
+    <div className="AgregarTareas">
+      <input
+        type="text"
+        placeholder="Escribí tu tarea"
+        value={texto}
+        onChange={(e) => setTexto(e.target.value)}
+      />
+      <button onClick={handleClick}>Subir Tarea</button>
     </div>
-  )
+  );
 }
+
+export default Agregar;
