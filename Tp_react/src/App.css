@@ -18,13 +18,11 @@ body {
   max-width: 600px; 
   text-align: center;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 20px; 
 }
-
 
 .AgregarTareas input[type="text"] {
   width: 100%;
@@ -41,7 +39,6 @@ body {
   border-color: #4CAF50; 
   outline: none;
 }
-
 
 button {
   width: 100%;
@@ -103,6 +100,7 @@ button {
   font-size: 14px;
   margin-left: 10px;
 }
+
 .TareaMasRapida {
   width: 100%;
   max-width: 600px;
@@ -122,3 +120,5 @@ button {
   color: #333;
   margin-top: 10px;
 }
+
+

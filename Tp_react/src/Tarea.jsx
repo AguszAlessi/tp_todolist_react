@@ -1,14 +1,9 @@
-import Tarea from "./Tarea";
-
-function Tareas({ tareas, onToggle }) {
-  if (!tareas) return null;
-  return (
-    <ul>
-      {tareas.map((tarea, i) => (
-        <Tarea key={i} tarea={tarea} onToggle={() => onToggle(i)} />
-      ))}
-    </ul>
-  );
-}
-
-export default Tareas;
+function Tarea({ tarea, onToggle }) {
+    return (
+      <li onClick={onToggle} style={{ cursor: 'pointer' }}>
+        {tarea.estaCompleta ? <s>{tarea.texto}</s> : tarea.texto}
+      </li>
+    );
+  }
+  
+  export default Tarea;

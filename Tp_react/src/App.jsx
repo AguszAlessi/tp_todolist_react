@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import Agregar from './Agregar';
 import BotonTareaRapida from './BotonTareaRapida';
-import Tareas from './Tarea';
+import Tareas from './Tareas';
+
 
 export default function App()
 {
@@ -46,6 +47,7 @@ export default function App()
       const duracion = (masRapida.completada - masRapida.creada) / 1000;
     setMasRapida(`Tarea más rápida: "${masRapida.texto}" en ${duracion.toFixed(2)} segundos.`);
     }
+    
   }
 
   return (
