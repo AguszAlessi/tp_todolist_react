@@ -53,11 +53,10 @@ export default function App()
   return (
     <div className="App">
       <h1>TODO List</h1>
-  
       <Agregar onAgregar={agregartarea} />
       <BotonTareaRapida onClick={TareaMasRapida} resultado={masRapida} />
       <Tareas tareas={tareas} onToggle={toggleTarea} />
-  
+
     </div>
   );
 }

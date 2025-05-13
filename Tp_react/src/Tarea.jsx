@@ -1,3 +1,5 @@
+import './Tarea.css'
+
 function Tarea({ tarea, onToggle }) {
     return (
       <div id="tareaagregada">

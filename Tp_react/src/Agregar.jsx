@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './Agregar.css'
 
 function Agregar({ onAgregar }) {
   const [texto, setTexto] = useState("");
